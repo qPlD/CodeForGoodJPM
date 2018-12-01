@@ -1,0 +1,7 @@
+<div *ngIf="message2Service.messages.length">
+
+  <input [(ngModel)]="text" [ngModelOptions]="{standalone: true}"/>
+  <button (click)="message2Service.add(text)">Submit</button>
+  <div *ngFor='let message of message2Service.messages'> {{message}} </div>
+
+</div>
